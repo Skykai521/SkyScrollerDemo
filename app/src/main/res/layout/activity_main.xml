@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boohee.scroller.MainActivity">
+
+    <com.boohee.scroller.ScrollTextView
+        android:id="@+id/stv_view"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_scroller_scroll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="scroller_scroll"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/bt_scroller_fling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="scroller_fling"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/bt_over_scroller_scroll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="over_scroll"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/bt_over_scroller_fling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="overs_fling"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_over_scroller_spring"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="over_spring_back"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

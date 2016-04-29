@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SkyScrollerDemo</string>
+    <string name="left_top_string">(%1$d , %2$d)</string>
+    <string name="right_bottom_string">(%1$d , %2$d)</string>
+</resources>
